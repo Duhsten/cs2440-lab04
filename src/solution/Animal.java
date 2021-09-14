@@ -19,7 +19,19 @@ public class Animal {
 
         public void setHungerLevel(int hunger)
         {
-                hungerLevel = hunger;
+           	if (hunger > 10)
+        	{
+        		hungerLevel = 10;
+        	}
+           	else if(hunger < 0)
+        	{
+        		hungerLevel = 0;
+        	}
+     
+        	else 
+        	{
+        		  hungerLevel = hunger;
+        	}
         }
         public String getName()
         {
